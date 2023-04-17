@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activites.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBar_VAM"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarRumor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/black"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="6dp"
+                android:src="@drawable/rumor2"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv1"
+            android:divider="#ad5"
+            android:dividerHeight="2dp"
+            android:layout_below="@+id/searchView"/>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coorVAM"
+        android:layout_below="@+id/appBar_VAM">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tab_VAM"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/all_news_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:stl_defaultTabBackground="?attr/selectableItemBackground"
+                    app:tabSelectedTextColor="@color/colorPrimary"
+                    app:stl_distributeEvenly="true"
+                    app:tabTextColor="@color/black"
+                    app:stl_dividerThickness="0dp"
+                    android:layout_below="@+id/app_bar"
+                    app:stl_drawDecorationAfterTab="true"
+                    android:background="@color/white"
+
+                    app:tabIconTint="@color/tab_icon_selector"
+                    app:tabIndicatorColor="@color/colorPrimary"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabMode="scrollable"
+                    app:tabPaddingEnd="16dp"
+                    app:tabPaddingStart="16dp"
+                    app:tabTextAppearance="@style/AppTheme.Headlines.TabTextAppearance" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/news_viewpager"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/coorVAM"
+        android:layout_marginTop="2dp"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>

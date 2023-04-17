@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393026989548",
+    "project_id": "rumorapp-60916",
+    "storage_bucket": "rumorapp-60916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393026989548:android:19e177ab4a393e2ffa64c9",
+        "android_client_info": {
+          "package_name": "com.PackageNews.rumorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393026989548-c66qb1nu30e2b79hfjqbfhs6sb2htret.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOmYIEImSjPKbmK9DUlmXFEEk-H_SHxdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393026989548-c66qb1nu30e2b79hfjqbfhs6sb2htret.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
